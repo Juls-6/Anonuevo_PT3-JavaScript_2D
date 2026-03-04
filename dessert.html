@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESSERT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="logo"><img src="IMG/lq.png" alt="LUGAW QUEEN" width="200" height="100"></div>
+    <header>
+
+
+
+        <div class="link">
+
+            <nav>
+                
+                    <a href="maincourse.html">MAINCOURSE</a>
+                        <a href="drinks.html">DRINKS</a>
+                            <a href="dessert.html">DESSERT</a>
+                
+            </nav>
+            </div>
+</header>
+<section class="menu-selection">
+    <h1 style="color: #FDF6F0;">Dessert</h1>
+
+    <div class="card">
+        <h3>Dessert</h3>
+        <img src="IMG/leche.jpg" width="200" height="200">
+        <p>Leche Flan</p>
+        <p>₱80</p>
+        <input type="number" min="1" value="1" id="lecheflan">
+        <button onclick="addToCart('leche', 80, 'lecheflan')">Add</button>
+    </div>
+
+    <div class="card">
+        <h3>Dessert</h3>
+        <img src="IMG/pto.jpg" width="200" height="200">
+        <p>Puto Cake</p>
+        <p>₱180</p>
+        <input type="number" min="1" value="1" id="putocake">
+        <button onclick="addToCart('puto', 180, 'putocake')">Add</button>
+    </div>
+
+    <div class="card">
+        <h3>Dessert</h3>
+        <img src="IMG/blbl.png" width="200" height="200">
+        <p>Bilo bilo</p>
+        <p>₱110</p>
+        <input type="number" min="1" value="1" id="bil">
+        <button onclick="addToCart('bilo', 110, 'bil')">Add</button>
+    </div>
+
+</section>
+<section class="cart">
+<h2>In the Cart</h2>
+<div id="cartItems"></div>
+
+<div id="age">
+<label>Enter Age:</label>
+<input type="number" id="userAge" min="1" placeholder="Enter your age" oninput="displayCart()">
+<p id="discountMessage"></p>
+</div>
+
+<h3 id="totalAmount"></h3>
+<button onclick="payNow()" id="payBtn">Pay</button>
+</section>
+<footer>
+    <p>@2026 Lugaw Queen Page</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

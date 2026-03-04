@@ -1,0 +1,176 @@
+/* reset spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body background */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("IMG/bc.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* dark overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+/* logo center */
+.logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* header/nav */
+header {
+    background-color: maroon;
+    padding: 15px 0;
+}
+
+.link nav {
+    text-align: center;
+}
+
+.link nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link nav a:hover {
+    color: #ffd700;
+}
+
+/* section title */
+.menu-selection h1 {
+    margin: 30px 0;
+}
+
+/* cards layout */
+.menu-selection {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* card style */
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* card image */
+.card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* price style */
+.card p:nth-child(4) {
+    font-weight: bold;
+    color: maroon;
+}
+
+/* quantity input */
+.card input {
+    width: 60px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* add button */
+.card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background-color: maroon;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #800000;
+}
+
+/* cart section */
+.cart {
+    background-color: #fff3e6;
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+}
+
+/* age input */
+#age {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#age label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#age input {
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+}
+
+#discountMessage {
+    margin-top: 5px;
+    font-size: 14px;
+    color: green;
+}
+
+/* pay button */
+#payBtn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#payBtn:hover {
+    background-color: #800000;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    margin-top: 40px;
+}
